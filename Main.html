@@ -1,0 +1,94 @@
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guisadio PT</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows:1fr 3fr 1fr ;
+        }
+
+    .header{
+        background-color: aqua;
+        font-size: 70px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+
+    }
+    .thing{
+        background-color: yellow;
+        font-size: 30px;
+        text-align: center;
+        border:1px solid black;
+
+    }
+    .menu{
+        background-color: green;
+        font-size: 50px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 2;
+
+    }
+   
+    .Footer{
+        background-color: teal;
+        font-size: 50px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+
+    }
+    @media only screen and (max-width:600px) {
+        .grid-container{
+            display:grid;
+        grid-template-columns:1fr 3fr ;
+        grid-template-rows:1fr 3fr  1fr ;
+        }
+
+    .header{
+        grid-column: span 2;
+    }
+    .menu{
+        grid-column:span 1;
+    }
+    .Footer{
+        grid-column: span 2;
+    }
+}
+@media only screen and (max-width:400px) {
+        .grid-container{
+        grid-template-columns: 3fr ;
+        grid-template-rows:1fr 3fr 3fr 1fr ;
+        }
+    
+    .header{
+        grid-column: span 1;
+    }
+
+    .Footer{
+        grid-column: span 1;
+    }
+}
+    </style>
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="header">Main page</div>
+        <div class="thing">
+            <td><a href="AboutMe.html">About me</a></td><br>
+            <td><a href="FavoriteGame.html">Favorite Games</a></td><br>
+            <td><a href="FavoriteFoods.html">Favorite Food</a></td><br>
+            <td><a href="MyHobbies.html">My Hobby</a></td><br>
+            <td><a href="FavoriteAnimals.html">Favorite Animal </a></td><br>
+        </div>
+        <div class="menu"> MAJOR PT GUISADIO, DEAN MATTHEW.</div>
+    
+        <div class="Footer">Grade 9 Versiglia</div>
+        
+    </div>
+</body>
+</html>

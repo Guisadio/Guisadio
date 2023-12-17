@@ -1,0 +1,97 @@
+<html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows:1fr 3fr 1fr ;
+        }
+    .Footer{
+        background-color: teal;
+        font-size: 50px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+
+}
+    .header{
+        background-color: aqua;
+        font-size: 70px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+
+    }
+    .thing{
+        background-color: yellow;
+        font-size: 30px;
+        text-align: center;
+        border:1px solid black;
+
+    }
+    .menu{
+        background-color: green;
+        font-size: 50px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 2;
+
+    }
+   
+
+@media only screen and (max-width:400px) {
+        .grid-container{
+        grid-template-columns: 3fr ;
+        grid-template-rows:1fr 3fr 3fr 1fr ;
+        }
+    .Footer{
+        grid-column: span 2;
+    }
+    .header{
+        grid-column: span 2;
+    }
+    .menu{
+        grid-column:span 1;
+    }
+
+	
+    }
+    @media only screen and (max-width:600px) {
+        .grid-container{
+            display:grid;
+        grid-template-columns:1fr 3fr ;
+        grid-template-rows:1fr 3fr  1fr ;
+        }
+    .Footer{
+        grid-column: span 1;
+    }
+    
+    .header{
+        grid-column: span 1;
+    }
+
+
+}
+    </style>
+    </head>
+    <body>
+    <div class="grid-container">
+        <div class="header">I am Dean Matthew Guisadio</div>
+        <div class="thing">
+            <td><a href="AboutMe.html">About me</a></td><br>
+            <td><a href="FavoriteGame.html">Favorite Games</a></td><br>
+            <td><a href="FavoriteFood.html">Favorite Food</a></td><br>
+            <td><a href="MyHobbies.html">My Hobby</a></td><br>
+            <td><a href="FavoriteAnimal.html">Favorite Animal</a></td><br>
+        </div>
+        <div class="menu"><img src="Eagle.jpeg" width=100% height=auto> Eagles take the #1 spot for me. Because they look so magestic and they hunt by swooping down to grab fish and other small rodents which i think is really cool.
+		</div>
+    
+        <div class="Footer"><td><a href="Main.html">Main Menu</a></td><br></div>
+        
+    </div>
+</body>
+</html>
